@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Dashboard</title>
+    </head>
+    <body>
+        <main class="container">
+            <div class="title">
+                <h1>Weather Dashboard</h1>
+            </div>
+
+            <!-- input area -->
+            <div class="form-area">
+                <form id="weatherForm" action="/weather" method="GET">
+                    <!-- input for city -->
+                    <input
+                        type="text"
+                        name="city"
+                        id="city"
+                        placeholder="City"
+                    />
+
+                    <!-- input for state -->
+                    <input
+                        type="text"
+                        name="state"
+                        id="state"
+                        placeholder="State"
+                    />
+
+                    <button type="submit">Get Weather</button>
+                </form>
+            </div>
+
+            <span id="errorMessage" class="error"></span>
+            <div id="weatherResults" class="results"></div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

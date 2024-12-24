@@ -1,0 +1,45 @@
+body,
+html {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.form-container {
+    background-color: antiquewhite;
+    border-radius: 5%;
+    gap: 1rem;
+}
+
+.button {
+    background-color: #04aa46;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+}
